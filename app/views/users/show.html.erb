@@ -18,7 +18,7 @@
       <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
     </ul>
 
-    <% @user.posts.each do |post| %>
+    <% @user.posts_updated_desc.each do |post| %>
       <div class="posts-index-item">
         <div class="post-left">
           <img src="<%= "/user_images/#{post.user.image_name}" %>">

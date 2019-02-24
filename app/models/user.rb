@@ -6,4 +6,8 @@ class User < ApplicationRecord
     def posts
         return Post.where(user_id: self.id)
     end
+
+    def posts_updated_desc
+        return Post.where(user_id: self.id).order(updated_at: :desc)
+    end
 end
