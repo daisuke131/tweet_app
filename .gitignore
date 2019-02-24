@@ -10,3 +10,4 @@ Gemfile.lock
 db/development.sqlite3-journal
 .DS_Store
 .DS_Store
+db/development.sqlite3
