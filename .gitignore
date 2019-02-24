@@ -1,10 +1,12 @@
 log
 tmp
-db/development.sqlite3
 db/test.sqlite3
 vendor
 .vscode/settings.json
 .bundle/config
 Gemfile.lock
 .vscode/launch.json
+.DS_Store
+db/development.sqlite3-journal
+.DS_Store
 .DS_Store
