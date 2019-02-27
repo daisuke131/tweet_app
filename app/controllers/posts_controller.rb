@@ -46,10 +46,6 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find_by(id: params[:id])
-
-    @likes = Like.where(post_id: @post.id)
-    @likes.destroy_all
-    
     @post.destroy
     flash[:notice] = "投稿を削除しました"
     redirect_to("/posts/index")
